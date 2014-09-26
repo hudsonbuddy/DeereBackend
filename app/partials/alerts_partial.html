@@ -1,0 +1,27 @@
+<div class="main">
+    <div class="content" auto-scroll="loadMore()">
+        <div ng-repeat="alert in alertArray" class="tooltip-wrap">
+            <div class="timestamp">
+                <p class="timestamptext" ng-bind-html="alert.topRightData"></p>
+            </div>
+            <img class="images" ng-src="./{{alert.thumb_uri}}" alt="Some Image" ng-dblclick="toggleDateLoc($index)"/>
+            <div class="tooltip-content">
+                <div class="titles" ng-repeat="(title,value) in alert.show_data">
+                    <p class="titletext">{{title}}:</p>
+                    <p class="titletext">{{value}}</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p class="hide-mobile">&copy; 2014</p>
+    <ul>
+        <li><a href="https://myjohndeere.deere.com">My John Deere</a></li>
+        <li><a href="https://www.google.com">Google+</a></li>
+        <li><a>FAQ</a>
+	<li><a ng-click="doLogOut()">Log out</a></li>
+    </ul>
+</footer>
+

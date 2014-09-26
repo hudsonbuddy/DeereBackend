@@ -1,0 +1,144 @@
+/* app css stylesheet */
+
+@font-face{
+    font-family: RobotoLight;
+    src: url('../fonts/Roboto-Light.ttf');
+}
+
+html { 
+    background: url("../img/cornfield_copy.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.main{
+    font-family: "RobotoLight" "Helvetica" sans-serif;
+}
+.tooltip-wrap {
+      position: relative;
+      margin: auto;
+      width: 600px;
+      padding-bottom: 20px;
+}
+.tooltip-content {
+    display: none;
+    position: absolute;
+    bottom: 10%;
+    background-color: rgba(125, 125, 125, 0.6);
+    color: white;
+}
+
+.tooltip-wrap:hover .tooltip-content {
+      display: block;
+}
+
+.images{
+
+    width: 600px;
+    border-radius: 6px;
+}
+
+.titles{
+    width: 120px;
+    height: 15px;
+    display: inline-block;
+}
+
+.values{
+    width: 120px;
+    height: 60px;
+    display: inline-block;
+}
+
+.titletext{
+
+}
+
+.content{
+    width: 670px;
+    margin: auto;
+    background-color: rgba(229, 230, 230, 1);
+    border-radius: 4px;
+}
+
+
+footer {
+    display: block;
+    padding: 20px 0 10px 0;
+    border-top: 1px solid #eeeeed;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: #fff;
+    outline: 5px solid rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+
+footer p {
+    float: left;
+    color: #999996;
+    top: 0;
+    margin: -11px 0px 0px 0px;
+    padding-left: 20px;
+}
+
+footer ul {
+    float: right;
+    list-style: none;
+    padding: 0 20px 0 20px;
+    margin: -11px 0px 0px 0px;
+}
+
+footer ul li {
+    float: left;
+    padding: 0 0 0 20px;
+}
+
+footer ul li a {
+    font-weight: normal;
+    color: #999996;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #333332;
+}
+
+#video{
+    width: 100%;
+}
+
+.signinContainer{
+    position: absolute;
+    width: 400px;
+    z-index: 100;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 50px;
+}
+
+.videoholder{
+    position: fixed;
+    width: 100%;
+}
+
+input {
+    margin-bottom: 5px;
+}
+
+.timestamptext {
+    position: absolute;
+    right: 0;
+    width: 100px;
+    background: rgba(125, 125, 125, 0.6);
+    text-align: center;
+    color: white;
+    border-radius: 4px;
+}
+
+
